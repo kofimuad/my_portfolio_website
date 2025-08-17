@@ -9,7 +9,7 @@
 
 /* Individual project bubble */
 .project-bubble {
-    background-color: #ffffff;
+    background-color: #262624;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     width: 500px; 
@@ -50,15 +50,15 @@
     /* Adjusted font size and margins */
     margin-top: 0;
     margin-bottom: 5px;
-    font-size: 1em;
+    font-size: 1rem;
     color: #4CAF50;
 }
 
 .project-content p {
     /* Adjusted font size and margins */
     margin-bottom: 10px;
-    color: #000000;
-    font-size: 0.8em;
+    color: #ecece4;
+    font-size: 0.8rem;
     flex-grow: 1;
     
     /* max-height: 55px;

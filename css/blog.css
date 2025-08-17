@@ -12,9 +12,10 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #1e1e1e;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     /* box-shadow: 0 4px 15px #4caf4f3e; */
     max-width: 1000px;
     width: 100%;
@@ -28,7 +29,8 @@ article {
 }
 
 .blog-post h2 {
-    color: #000000;
+    color: #38ef7d;  
+    /* color: #ecece4; */
     font-size: 1rem;
     text-align: center;
     /* border-bottom: 2px solid #333; */
@@ -37,9 +39,12 @@ article {
 }
 
 .blog-post p {
-    color: #000000;
+    font-size: 12px;
+    color: #ddd;   ;
     margin-bottom: 20px;
+    line-height: 1.7; 
     text-align: justify;
+    margin-bottom: 1.2rem;
 }
 
 /* Read More Button */
@@ -52,6 +57,7 @@ article {
     border-radius: 5px;
     font-weight: bold;
     letter-spacing: 0.5px;
+    font-size: 12px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
