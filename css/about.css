@@ -1,0 +1,312 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lucida';
+    src: url('../assets/lucida-console/lucon.ttf') format('truetype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  background-color: #262624; /* dark background to match your site */
+}
+
+body {
+  background-color: #262624;
+  font-family: 'Lucida', sans-serif;
+  color: #ECEBE4;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    color: #ECEBE4;
+}
+
+nav a.active {
+  color: #4CAF50; /* active page */
+  font-weight: bold; /* optional */
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;                /* Start from the middle */
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4CAF50;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::after {
+  width: 100%;              /* Expand to full width */
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25rem;
+  margin-right: 25rem;
+}
+
+article h1 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #4CAF50;
+  text-underline-offset: 4px;
+}
+
+article p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-color: #4CAF50;
+  text-underline-offset: 4px;
+}
+
+.skillo {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.skills {
+  text-align: center;
+  /* padding: 20px; */
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.skill-icons i {
+  font-size: 60px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: column; /* stack rows vertically */
+  gap: 20px; /* space between rows */
+  align-items: center; /* center the rows horizontally */
+}
+
+.skill-icons .row {
+  display: flex;
+  gap: 30px;
+}
+
+/* Hover effect - scale up slightly */
+.skill-icons i:hover {
+  transform: scale(1.2);
+  color: #4CAF50; /* optional: change color on hover */
+}
+
+/* Optional bounce effect instead */
+/* .skill-icons i:hover {
+  animation: bounce 0.5s;
+  color: #ff5722;
+} */
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.services {
+  text-align: center;
+  padding: 20px;
+}
+
+.service-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 15px;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item i {
+  font-size: 45px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.service-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.service-item i:hover {
+  transform: scale(1.2);
+  color: #4CAF50;
+}
+
+.services h2 {
+  font-size: 1rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #262624;
+  color: #ECEBE4;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.kaizoku {
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
+}
+
+#beyond-programming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#beyond-programming h2 {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#beyond-programming .hobby {
+  font-size: 1rem;
+  color: #4CAF50;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+#contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #262624; /* light neutral background */
+}
+
+#contact h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#contact .contact-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Contact Icons */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-links a {
+  font-size: 2rem;
+  color: #555;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #4CAF50; /* highlight green (match your site accent) */
+  transform: scale(1.2);
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #f9f9f9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4CAF50;
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* Closing Line */
+.closing-line {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #fff
+}
