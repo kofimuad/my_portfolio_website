@@ -1,0 +1,87 @@
+/* Main projects container */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Stacks the bubbles vertically */
+    align-items: center; /* Centers the bubbles on the page */
+    gap: 30px; /* Space between each bubble */
+    padding: 40px 20px;
+}
+
+/* Individual project bubble */
+.project-bubble {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    width: 500px; 
+    max-width: 90%;
+    overflow: hidden;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* border: 1px solid #333; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-bubble:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.project-image {
+    width: 150px; /* Fixed width for the image */
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    /* Reduced padding to fit into the smaller space */
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.project-content h3 {
+    /* Adjusted font size and margins */
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #4CAF50;
+}
+
+.project-content p {
+    /* Adjusted font size and margins */
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 0.8em;
+    flex-grow: 1;
+    
+    /* max-height: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+
+.github-link {
+    display: inline-block;
+    /* Adjusted padding and font size for a smaller button */
+    padding: 4px 7.5px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+}
+
+.github-link:hover {
+    background-color: #386b39;
+    transform: scale(1.05);
+}
