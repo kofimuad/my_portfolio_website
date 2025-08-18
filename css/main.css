@@ -87,6 +87,10 @@ nav a:hover::after {
     flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
 footer {
     position: fixed;
     bottom: 0;
