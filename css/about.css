@@ -21,6 +21,7 @@ body {
   background-color: #262624;
   font-family: 'Lucida', sans-serif;
   color: #ECEBE4;
+  position: relative;
 }
 
 /* Navigation */
@@ -186,9 +187,8 @@ h2 {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   background: #262624;
   color: #ECEBE4;
