@@ -172,36 +172,75 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .name {
-        font-size: 10vw;
+    .header {
+        text-align: center;
     }
-
+    nav {
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
     .profile_pic {
-        margin-top: 3rem; /* Reduce top margin on smaller screens */
+        margin-top: 2rem;
         margin-bottom: 2rem;
+        width: 120px;
+        height: 120px;
     }
-
-    .artico {
-        padding: 0 1rem;
+    .name {
+        font-size: 2.5rem; /* Smaller font size for mobile */
     }
-
-    .artico h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
+    .title {
+        font-size: 0.9rem;
     }
-
-    .hide {
-      margin-top: 50px;
-    }
-
     .btn-containter {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
-        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
     }
-
     .btn-1, .btn-2 {
-        width: 100%; /* Make buttons full-width when stacked */
-        margin-bottom: 0.5rem; /* Add space between stacked buttons */
-        max-width: 300px;
+        width: 80%; /* Adjust button width for mobile */
+        max-width: 250px;
     }
+    .hide {
+        margin-top: 3rem;
+    }
+    /*
+     * Correcting the footer position. Using absolute positioning
+     * can cause it to overlap content on smaller screens.
+     */
+    footer {
+        position: static;
+        margin-top: 3rem; /* Add space between content and footer */
+    }
+}
+
+/* Tablet Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .profile_pic {
+        width: 180px;
+        height: 180px;
+    }
+    .name {
+        font-size: 4rem;
+    }
+    .btn-containter {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+/* Desktop Devices (1025px and up) */
+@media (min-width: 1025px) {
+    /* .profile_pic {
+        margin-top: 5rem;
+        width: 200px;
+        height: 200px; */
+    /* }
+    .name {
+        font-size: 5rem;
+    } */
+    /* .btn-containter {
+        flex-direction: row;
+        gap: 2rem;
+    } */
+    /*You can add more specific desktop styles here if needed */
 }
