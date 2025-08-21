@@ -273,8 +273,9 @@ form input,
 form textarea {
   width: 100%;
   padding: 12px;
+  background-color: #3b3b3b;
   font-size: 1rem;
-  border: 2px solid #f9f9f9;
+  border: 2px solid #3b3b3b;;
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s ease;
