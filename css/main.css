@@ -75,6 +75,7 @@ nav a:hover::after {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-position: 90% 10%;
     object-fit: cover;
     margin-top: 5rem;
     margin-bottom: 3rem;
