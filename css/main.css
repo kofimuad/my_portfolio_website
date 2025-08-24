@@ -72,8 +72,8 @@ nav a:hover::after {
 
 /* Profile Section */
 .profile_pic {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-position: 90% 10%;
     object-fit: cover;
